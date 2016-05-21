@@ -284,7 +284,7 @@ class BuilderBase(object):
         filename = resource_find(filename) or filename
         if __debug__:
             trace('Builder: load file %s' % filename)
-        with open(filename, 'r', encoding='uft-8') as fd:
+        with open(filename, 'r', encoding='utf-8') as fd:
             kwargs['filename'] = filename
             data = fd.read()
 
